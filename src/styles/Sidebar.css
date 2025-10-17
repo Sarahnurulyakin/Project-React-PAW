@@ -1,0 +1,43 @@
+.sidebar {
+    width: 220px;
+    background-color: #4B3F72; /* ungu tua elegan */
+    color: #F5F5F5; /* krem lembut */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo svg {
+    margin-right: 10px;
+    fill: #F5F5F5; /* warna ikon sama dengan teks */
+  }
+  
+  .sidebar h2 {
+    font-size: 1.2rem;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    padding: 12px 0;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .sidebar li:hover {
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 6px;
+  }
+  .sidebar li.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+  }
+  

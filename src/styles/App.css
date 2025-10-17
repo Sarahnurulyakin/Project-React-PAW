@@ -1,0 +1,175 @@
+/* ===== GLOBAL ===== */
+.app {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+/* ===== GRID BUKU (Dashboard) ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* ===== LIST BUKU (Daftar Buku) ===== */
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.list-card {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.list-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.list-card h3 {
+  margin: 0 0 8px 0;
+  color: #4B3F72;
+}
+
+.list-card p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #F7C548; /* kuning lembut */
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+
+/* ===== ABOUT ===== */
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.about-card {
+  max-width: 700px;
+  background-color: #F5F5F5;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+.about-card h2 {
+  color: #4B3F72;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-card p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-card ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.about-card ul li {
+  margin-bottom: 8px;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 220px;
+  background-color: #4B3F72;
+  color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.logo svg {
+  width: 36px;
+  height: 36px;
+  fill: #F5F5F5;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sidebar li.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+}
+
+/* ===== RESPONSIF ===== */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .grid, .list-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

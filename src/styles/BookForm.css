@@ -1,0 +1,47 @@
+.form-container {
+    background-color: #F5F5F5; /* krem */
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-top: 6px solid #9C6ADE; /* ungu pastel elegan */
+  }
+  
+  .form-container h2 {
+    margin-bottom: 15px;
+    color: #4B3F72; /* ungu tua */
+    text-align: center;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.2s;
+  }
+  
+  .form-container input:focus {
+    border: 2px solid #9C6ADE; /* ungu pastel */
+    outline: none;
+  }
+  
+  .form-container button {
+    width: 100%;
+    background-color: #9C6ADE; /* ungu pastel */
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .form-container button:hover {
+    background-color: #7A4FB3; /* ungu lebih gelap saat hover */
+    transform: translateY(-2px);
+  }
+  
